@@ -7,7 +7,7 @@ const Form = () => {
     const { entries, addExpenses, handleChange } = useContext(ExpenseContext)
 
     return (
-        <>
+        <div className='px-2 pb-2'>
          <h2 className='text-lg font-medium mb-4' >Add your expenses here.</h2>
             
             <form onSubmit={addExpenses}>
@@ -17,7 +17,7 @@ const Form = () => {
                 <br />
                 <input type='submit' value='Add' className='bg-white border outline-none border-black text-black py-1 px-4 hover:bg-black hover:text-white transition-all cursor-pointer' />
             </form>
-        </>
+        </div>
     )
 }
 

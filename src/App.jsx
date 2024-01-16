@@ -50,7 +50,7 @@ function App() {
   return (
     <>
       <h1 className='mb-4 font-bold text-lg'>Expense Tracker</h1>
-      <div className='border border-gray-300 font-sans p-2 w-[fit-content] mx-auto text-left min-w-[300px]'>
+      <div className='border border-gray-300 font-sans w-[fit-content] mx-auto text-left min-w-[300px]'>
 
         <ExpenseContext.Provider value={{ history, setHistory, entries, setEntries, income, setIncome, expense, setExpense, balance, setBalance, addExpenses, handleChange }}>
           <Header />
